@@ -8,11 +8,12 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     opacity: 0;
     visibility: hidden;
     transition: 0.4s;
+    overflow: scroll;
 }
 
 .modal-parent.active {
@@ -20,37 +21,36 @@
     visibility: visible;
 }
 
-.delete-modal {
-    background-color: var(--white);
-    padding: 50px;
-    text-align: center;
+.cms-main {
+    margin-top: 60px;
+    padding: 20px;
+    border-radius: 25px;
 }
 
-.delete-modal h1 {
+.cms-title {
+    font-weight: bold;
     font-size: 2rem;
 }
 
-.delete-modal-btns {
-    display: flex;
-    column-gap: 20px;
-}
-
-.delete-btn {
+.cms-table {
+    margin-top: 20px;
     width: 100%;
-    margin-top: 30px;
-    font-size: 1.3rem;
-    padding: 20px 0;
-    border: none;
-    outline: none;
-
+    border-radius: 10px;
+    background-color: var(--white);
 }
 
-.delete-modal-accept-btn {
+
+.cms-table tr {
+    text-align: center;
+}
+
+.cms-table th, .cms-table td {
+    padding: 20px;
+}
+
+.cms-table button {
     background-color: var(--blue);
     color: var(--white);
-    width: 100%;
-}
-
-.delete-modal-reject-btn {
-
+    padding: 8px 15px;
+    border-radius: 10px;
 }
