@@ -53,7 +53,7 @@ export default function Comments() {
       method: "DELETE",
     }).then(res => res.json())
       .then(reasult => {
-        setIsShowDeleteModal(false)
+        setIsShowDeleteModal(false) 
         getAllComments()
       })
 
